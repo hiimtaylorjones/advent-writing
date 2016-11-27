@@ -14,3 +14,30 @@ h1 {
   font-size: 3.0em;
   color: white;
 }
+
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: white;
+}
+
+h5 {
+  color: white;
+}
+
+.tile {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: $red-pink;
+  border: 1px solid black;
+
+  .content {
+    margin: 0.5em;
+  }
+}
