@@ -1,7 +1,9 @@
 @import "bourbon";
+@import "_fonts";
 
 $velvet: #780116;
-$red-pink: #D83646;
+$tile-base: #D83646;
+$tile-layer: #c75a43;
 $forest-green: #053225;
 $weed-green: #7A9B76;
 $grey-blue: #6B9AA5;
@@ -10,34 +12,23 @@ body {
   background-color: $velvet;
 }
 
-h1 {
-  font-size: 3.0em;
-  color: white;
-}
-
-h2 {
-  color: white;
-}
-
-h3 {
-  color: white;
-}
-
-h4 {
-  color: white;
-}
-
-h5 {
-  color: white;
-}
-
 .tile {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  background-color: $red-pink;
+  background-color: $tile-base;
   border: 1px solid black;
+  margin: 0.5em;
+
+  .base {
+    position: relative;
+  }
+
+  .layer {
+    border: 1px solid black;
+    margin: 1em;
+    position: relative;
+    background-color: $tile-layer;
+  }
 
   .content {
-    margin: 0.5em;
+    margin: 0.75em;
   }
 }

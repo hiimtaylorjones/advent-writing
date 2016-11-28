@@ -6,5 +6,5 @@ import { hasMany } from 'ember-data/relationships';
 export default Model.extend({
   title: attr('string'),
   subtitle: attr('string'),
-  content: hasMany('content');
+  content: hasMany('content')
 });
