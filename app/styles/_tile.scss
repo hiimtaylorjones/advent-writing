@@ -1,0 +1,23 @@
+$tile-base: #D83646;
+$tile-layer: #e43928;
+
+.tile {
+  background-color: $tile-base;
+  border: 1px solid black;
+  margin: 0.5em;
+
+  .base {
+    position: relative;
+  }
+
+  .layer {
+    border: 1px solid black;
+    margin: 1em;
+    position: relative;
+    background-color: $tile-layer;
+  }
+
+  .content {
+    margin: 0.75em;
+  }
+}

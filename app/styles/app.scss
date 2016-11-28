@@ -1,9 +1,9 @@
 @import "bourbon";
+@import "neat";
 @import "_fonts";
+@import "_tile";
 
 $velvet: #780116;
-$tile-base: #D83646;
-$tile-layer: #e43928;
 $forest-green: #053225;
 $weed-green: #7A9B76;
 $grey-blue: #6B9AA5;
@@ -12,23 +12,6 @@ body {
   background-color: $velvet;
 }
 
-.tile {
-  background-color: $tile-base;
-  border: 1px solid black;
-  margin: 0.5em;
-
-  .base {
-    position: relative;
-  }
-
-  .layer {
-    border: 1px solid black;
-    margin: 1em;
-    position: relative;
-    background-color: $tile-layer;
-  }
-
-  .content {
-    margin: 0.75em;
-  }
+.main {
+  @include span-columns(12);
 }
