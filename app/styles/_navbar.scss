@@ -1,0 +1,31 @@
+.navbar {
+
+  .left {
+    @include span-columns(6);
+    .title {
+      color: white;
+      font-size: 1.35em;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .right {
+    @include span-columns(6);
+    ul {
+      float: right;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin: 10px;
+      li {
+        font-size: 1.35em;
+        color: white;
+        display: inline;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+}

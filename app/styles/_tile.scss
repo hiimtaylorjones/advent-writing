@@ -1,21 +1,27 @@
 $tile-base: #D83646;
 $tile-layer: #e43928;
 
-.tile {
+.base-tile {
+  @include outer-container;
   background-color: $tile-base;
   border: 1px solid black;
-  margin: 0.5em;
 
-  .base {
-    position: relative;
-  }
 
-  .layer {
-    border: 1px solid black;
-    margin: 1em;
-    position: relative;
-    background-color: $tile-layer;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+
+  .content {
+    margin: 0.75em;
   }
+}
+
+.layer-tile {
+  @include span-columns(4);
+  @include omega(3n);
+  border: 1px solid black;
+  margin: 1em;
+  //position: relative;
+  background-color: $tile-layer;
 
   .content {
     margin: 0.75em;
